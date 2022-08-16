@@ -2,8 +2,6 @@
 "execute pathogen#infect()
 syntax on
 filetype plugin indent on
-"this is test for git 
-"
 
 
 set nocompatible
