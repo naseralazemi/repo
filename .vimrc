@@ -2,6 +2,9 @@
 "execute pathogen#infect()
 syntax on
 filetype plugin indent on
+"this is test for git 
+"
+
 
 set nocompatible
 "filetype plugin on
@@ -10,7 +13,7 @@ set nocompatible
 set nu
 set delcombine termbidi arabicshape encoding=utf-8
 inoremap jk <ESC>
-let mapleader=","   
+let mapleader=" "   
 
 " Specify a directory for plugins
 " - For Neovim: stdpath('data') . '/plugged'
@@ -71,10 +74,13 @@ set spell!
 
 "let g:vimtex_complete_enabled
 
-  let g:tex_flavor='latex'
-    let g:vimtex_view_method='zathura'
-   " let g:vimtex_quickfix_mode=0
-
+ " let g:tex_flavor='latex'
+ "   let g:vimtex_view_method='zathura'
+ "  " let g:vimtex_quickfix_mode=0
+let g:tex_flavor='latex' " Default tex file format
+let g:vimtex_view_method = 'skim' " Choose which program to use to view PDF file 
+let g:vimtex_view_skim_sync = 1 " Value 1 allows forward search after every successful compilation
+let g:vimtex_view_skim_activate = 1 " Value 1 allows change focus to skim after command `:VimtexView` is given
      let g:UltiSnipsExpandTrigger = '<tab>'
     let g:UltiSnipsJumpForwardTrigger = '<tab>'
     let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
